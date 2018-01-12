@@ -4,3 +4,4 @@ npm-debug.log
 target/*
 package-lock.json
 .gradle
+.idea
