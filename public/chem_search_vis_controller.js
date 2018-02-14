@@ -5,9 +5,7 @@ import {FilterBarQueryFilterProvider} from 'ui/filter_bar/query_filter';
 
 const module = uiModules.get('kibana/chem_search_vis', ['kibana']);
 module.controller('ChemSearchVisController', function ($scope, Private, $http, $interpolate) {
-  $scope.molSearchApiBaseUrl = 'https://smiles-to-fingerprint-dot-chemical-search.appspot.com';
-
-  console.warn('chem search is loaded');
+  $scope.molSearchApiBaseUrl = 'https://api.chemicalfingerprint.siren.io';
 
   const queryFilter = Private(FilterBarQueryFilterProvider);
 
@@ -47,7 +45,8 @@ module.controller('ChemSearchVisController', function ($scope, Private, $http, $
     // when editing visualisation
     // e.g. you can grab "fields" and use them to generate the filter
     $http({
-      url : `${$scope.molSearchApiBaseUrl}/fingerprint`,
+      url: `${$scope.vis.params.api_url || $scope.molSearchApiBaseUrl}/fingerprint`,
+      // url : `${$scope.molSearchApiBaseUrl}/fingerprint`,
       // url: 'https://localhost:8009/fingerprint',
       method: 'GET',
       params: {smiles: $scope.vis.params.smiles}

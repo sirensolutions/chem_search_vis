@@ -1,6 +1,19 @@
 <div class="form-group">
-  <div>
-    <label>fingerprint field</label>
-    <input type="text" ng-model="vis.params.field">
-  </div>
+  <!--<div>-->
+    <!--<label>fingerprint field</label>-->
+    <!--<input type="text" ng-model="vis.params.field">-->
+  <!--</div>-->
+  <section>
+    <div class="inline-help">
+      This feature requires a service to calculate the fingerprints associated with the searched molecule.<br/>
+      Siren already provides a default API at https://api.chemicalfingerprint.siren.io but if you want to use
+      your own API enter below its base URL
+    </div>
+  </section>
+  <section>
+    <div>
+      <label>fingerprint API base URL</i></label>
+      <input type="text" ng-model="vis.params.api_url" value="https://api.chemicalfingerprint.siren.io">
+    </div>
+  </section>
 </div>
