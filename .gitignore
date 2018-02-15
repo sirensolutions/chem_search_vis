@@ -5,3 +5,4 @@ target/*
 package-lock.json
 .gradle
 .idea
+venv
