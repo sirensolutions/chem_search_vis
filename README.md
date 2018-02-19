@@ -9,7 +9,7 @@ Siren provides a public site available for calculating these fingerprints at htt
 In order to use this widget you need to make it available to Siren Federate.
 
 ```
-$ ./bin/investigate install-plugin 'https://github.com/sirensolutions/chem_search_vis/releases/latest'
+$ ./bin/investigate install-plugin 'https://github.com/sirensolutions/chem_search_vis/releases/download/v2.0/v2.0.zip'
 ```
 
 
