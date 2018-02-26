@@ -2,14 +2,14 @@
 
 This repository contains the chemical search plugin for Siren Federate.
 It includes the visualisation plugin for molecular searches in Siren. These searches, based on chemical fingerprint similarities, requires a service to calculate these fingerprints on the fly.
-Siren provides a public site available for calculating these fingerprints at https://api.chemicalfingerprint.siren.io, but you can deploy your own service and use it in the plugin. Find below how.
-   
+Siren provides a public site available for calculating these fingerprints for demo purposes at https://api.chemicalfingerprint.siren.io. This demo is provided as a courtesy on a best effort basis. For production deployments you should run your service internally and use it in the plugin. Find below how.
+
 ## INSTALLATION
 
 In order to use this widget you need to make it available to Siren Federate.
 
 ```
-$ ./bin/investigate install-plugin 'https://github.com/sirensolutions/chem_search_vis/releases/download/v2.0/v2.0.zip'
+$ ./bin/investigate-plugin install 'https://github.com/sirensolutions/chem_search_vis/releases/download/v2.0/v2.0.zip'
 ```
 
 
